@@ -1,0 +1,38 @@
+/*
+April 2013
+Created by Josh Taylor, Justin Schirra, Todd Becker & Tyler Barger
+This is the CSS in order to style the landing page for our SVG Vectorization
+program
+*/
+
+h3{
+ font: 30px Open Sans, sans-serif;
+ font-weight: 400;
+ text-align: center;
+ color: #E67A17;
+ text-shadow: 1px 1px 1px #ff0000;
+}
+.welcome{
+ text-align: center;
+}
+.howTo{
+ padding-left: 18%;
+ padding-right: 18%;
+}
+.bodyContainer{
+ -moz-box-shadow: 3px 3px 3px 4px #000;
+ -webkit-box-shadow: 3px 3px 4px #000;
+ box-shadow: 3px 3px 4px #000;
+ margin-left: auto;
+ margin-right: auto;
+ height: 600px;
+ width: 800px;
+ background-color: #7DBBCF;
+ border: 5px solid black;
+ border-radius: 25px;
+ font-family: 'Open Sans', sans-serif;
+}
+.credits{
+ text-indent: 15px;
+ font: 14px Open Sans, sans-serif;
+}
