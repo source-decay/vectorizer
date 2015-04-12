@@ -1,36 +1,40 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-  <!--
-  April 2013
-  Created by Josh Taylor, Justin Schirra, Todd Becker & Tyler Barger
-  This website will serve as the front end for our SVG Vectorization program
-  which will take a user uploaded Bitmap image and convert it to a SVG image.
-  !-->
-  <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
-<head>
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./style/landingPage.css" rel="stylesheet" />
+</head>
+
 <body>
+
   <div class="bodyContainer">
-   <h3>Welcome!</h3>
-   <p class="welcome">
-    This website will take a Bitmap image (some examples being .JPG or .PNG) that you provide and convert it to a 
-    Scalabale Vector Graphic (SVG) for you to view and download.
-   </p>
-   <hr>
-   <h3>How to Use:</h3>
-   <div class="howTo">
-     <ol>
+
+    <h3>Welcome!</h3>
+
+    <p class="welcome">
+    This website will take a Bitmap image (some examples being .JPG or .PNG) that you provide and convert it to a Scalabale Vector Graphic (SVG) for you to view and download.
+    </p>
+
+    <hr>
+    <h3>How to Use:</h3>
+    
+    <div class="howTo">
+      
+      <ol>
       <li>Think of a picture you would like us to convert for you. We'll be here when you decide.</li>
       <li>All set? Select your picture:</li>
-        <form action="upload_file.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" />
+      <form action="upload_file.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" id="file" />
       <li>And then click this here button:</li>
-        <input type="submit" name="submit" value="Submit" />
-        </form>
-     </ol>
-   </div><br><br><br><br><br><br>
-   <hr>
-   <p class="credits">Barger, Tyler; Becker, Todd; Schirra, Justin; Taylor, Joshua</p>
+      <input type="submit" name="submit" value="Submit" />
+      </form>
+      </ol>
+
+    </div>
+
   </div>
+
 </body>
 </html>

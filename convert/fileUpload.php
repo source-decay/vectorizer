@@ -1,6 +1,4 @@
 <?php
-//April 2013
-//Created by Josh Taylor, Justin Schirra, Todd Becker & Tyler Barger
 //This purpose of this file is the take a user-uploaded Bitmap image and
 //convert it (via the Linux command line utility Autotrace) and then display
 //it for the user to view.
@@ -20,8 +18,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/x-png")
 || ($_FILES["file"]["type"] == "image/png"))
 && ($_FILES["file"]["size"] < 2000000)
-&& in_array($extension, $allowedExts))
-  {
+&& in_array($extension, $allowedExts)){
   if ($_FILES["file"]["error"] > 0)
     {
     //Return error code (if an error occurs)
@@ -33,8 +30,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
     move_uploaded_file($_FILES["file"]["tmp_name"],
     "upload/" . $_FILES["file"]["name"]);
 
-    //Create variables that need to be escaped in order to be used in shell_exec 
-	//commands properly
+    //Create variables that need to be escaped in order to be used in shell_execcommands properly
 	
     $rasterTemp = "upload/" . $_FILES["file"]["name"];
     
@@ -69,7 +65,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
     $temp = "upload/" . $_FILES["file"]["name"];
     chmod("$temp",0444);
 
-    //Fix header information of 'vectorImage2.svg' to mitigate error until able to fix
+    //Fix header information of 'vectorImage2.svg' to mitigate MIMETYPE error 
     shell_exec('./headerFix.sh upload/vectorImage.svg');
 
     //Place 'vectorImage2.svg'
