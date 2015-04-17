@@ -2,39 +2,81 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" />
+  <!-- Boostrap -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="./style/landingPage.css" rel="stylesheet" />
+  <link href="./style/jumbotron-narrow.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
 
-  <div class="bodyContainer">
+  <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">SVG Vectorizer</h3>
+      </div>
 
-    <h3>Welcome!</h3>
+      <div class="jumbotron">
+        <h1>Welcome</h1>
+        <p class="lead">This webpage will allow you to upload a bitmap-style picture (like a .jpg or .png) and have it converted to a Scalable Vector Graphic.</p>
+        
+        <form action="./convert/fileUpload.php" method="post" enctype="multipart/form-data">
+          <input type="file" name="file" id="file" />
+          <input type="submit" name="submit" value="Submit" />
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Upload</a></p>
+        </form>
 
-    <p class="welcome">
-    This website will take a Bitmap image (some examples being .JPG or .PNG) that you provide and convert it to a Scalabale Vector Graphic (SVG) for you to view and download.
-    </p>
+      </div>
 
-    <hr>
-    <h3>How to Use:</h3>
-    
-    <div class="howTo">
-      
-      <ol>
-      <li>Think of a picture you would like us to convert for you. We'll be here when you decide.</li>
-      <li>All set? Select your picture:</li>
-      <form action="upload_file.php" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" id="file" />
-      <li>And then click this here button:</li>
-      <input type="submit" name="submit" value="Submit" />
-      </form>
-      </ol>
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-    </div>
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-  </div>
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
 
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Company 2014</p>
+      </footer>
+
+  </div> <!-- /container -->
+
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
