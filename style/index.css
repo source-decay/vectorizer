@@ -1,0 +1,9 @@
+/*A sneaky way to get my buttons to look nice. I am able to hide the file submission input and submit input on the index.html page via display:none and allow the "buttons" on the webpage to be clicked, doing the actual magic.*/
+
+#fileChoice {
+    display: none;
+}
+
+#submitChoice {
+    display: none;
+}
