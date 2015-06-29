@@ -11,7 +11,6 @@ In order to play with this project, just follow these few easy steps:
 1.  As of right now, Vectorizer only runs via Linux (originally developed on Debian).
 
 2.  Make sure to install AutoTrace if not already installed (I believe with Ubuntu it is preinstalled):
-
 `sudo apt-get install autotrace` (in the case of Debian-based distros).
 
 3.  Make sure to install PHP if not already installed (and the rest of the LAMP stack (Linux Apache MySQL PHP) while you're at it).
