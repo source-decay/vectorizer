@@ -1,5 +1,5 @@
 # Hello #
-This is one of my little pet projects that is called 'Vectorizer' (it really rolls off the tongue, I know). What we are looking at here is a project that I had been working on for my in my senior capstone course in university. Three classmates and myself were tasked with creating a web page that allowed an End User to upload a bitmap-style image and then convert it into a Scalable Vector Graphic for them to download. This solved the problem of a readily available, _free (as in free beer)_, web-based SVG Vectorization program.
+This is one of my little pet projects that is called 'Vectorizer' (it really rolls off the tongue, I know). What we are looking at here is a project that I had been working on for my in my senior capstone course in university. Three classmates and myself were tasked with creating a web page that allowed an end user to upload a bitmap-style image and then convert it into a Scalable Vector Graphic for them to download. This solved the problem of a readily available, _free (as in free beer)_, web-based SVG Vectorization program.
 
 The initial iteration of the project was enough to get us an 'A' on the project but I wanted the project to be more than it was so I took it upon myself to continue working on the project in my free time in order to make it everything I wanted it to be.
 
@@ -7,10 +7,10 @@ As far as what we have going on, this project is running HTML and CSS3 upfront i
 
 ## Getting Started ##
 In order to play with this project, just follow these few easy steps:
-1. As of right now, Vectorizer only runs via Linux (originally developed on Debian).
-2. Make sure to install AutoTrace if not already installed (I believe with Ubuntu it is preinstalled):
+1.  As of right now, Vectorizer only runs via Linux (originally developed on Debian).
+2.  Make sure to install AutoTrace if not already installed (I believe with Ubuntu it is preinstalled):
 `sudo apt-get install autotrace` (in the case of Debian-based distros).
-3. Make sure to install PHP if not already installed (and the rest of the LAMP stack (Linux Apache MySQL PHP) while you're at it).
+3.  Make sure to install PHP if not already installed (and the rest of the LAMP stack (Linux Apache MySQL PHP) while you're at it).
 `sudo apt-get install PHP`
-4. From here, open your [browser of choice](https://www.mozilla.org/en-US/firefox/new/) and navigate to _index.html_
-5. The rest...well the rest is pretty self explanatory huh? Enjoy.
+4.  From here, open your [browser of choice](https://www.mozilla.org/en-US/firefox/new/) and navigate to _index.html_
+5.  The rest...well the rest is pretty self explanatory huh? Enjoy.
