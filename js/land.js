@@ -12,7 +12,3 @@ $( document ).ready(function() {
     })
 
 });
-
-
-
-    

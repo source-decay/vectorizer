@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <title>Vectorizer</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,10 @@
   <!-- Boostrap -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./style/jumbotron-narrow.css" rel="stylesheet">
+  <link href="./style/index.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/land.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,44 +35,22 @@
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">SVG Vectorizer</h3>
+        <h3 class="text-muted">Vectorizer</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>Welcome</h1>
-        <p class="lead">This webpage will allow you to upload a bitmap-style picture (like a .jpg or .png) and have it converted to a Scalable Vector Graphic.</p>
+        <h1>Hey, You! Yes, You!</h1>
+        <p class="lead">Tired of pixelated pictures in your life? Me to! Go ahead and upload a picture (like a JPG) and I'll work my magic to make it a Scalable Vector Graphic so you don't have to worry about having nasty pixels in your life anymore.</p>
         
         <form action="./convert/fileUpload.php" method="post" enctype="multipart/form-data">
-          <input type="file" name="file" id="file" />
-          <input type="submit" name="submit" value="Submit" />
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Upload</a></p>
+          <input type="file" id="fileChoice" />
+          <p><a class="btn btn-sm btn-default" id="fileUploadBtn" role="button">Choose Picture</a></p>
+          <input type="submit" id="submitChoice" value="Submit" />
+          <p><a class="btn btn-lg btn-success" id="submitChoiceBtn" role="button">Upload</a></p>
         </form>
 
       </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+  </div>
 
       <footer class="footer">
         <p>&copy; Company 2014</p>
