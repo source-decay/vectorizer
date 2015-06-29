@@ -7,10 +7,16 @@ As far as what we have going on, this project is running HTML and CSS3 upfront i
 
 ## Getting Started ##
 In order to play with this project, just follow these few easy steps:
--  As of right now, Vectorizer only runs via Linux (originally developed on Debian).
--  Make sure to install AutoTrace if not already installed (I believe with Ubuntu it is preinstalled):
+
+1.  As of right now, Vectorizer only runs via Linux (originally developed on Debian).
+
+2.  Make sure to install AutoTrace if not already installed (I believe with Ubuntu it is preinstalled):
+
 `sudo apt-get install autotrace` (in the case of Debian-based distros).
--  Make sure to install PHP if not already installed (and the rest of the LAMP stack (Linux Apache MySQL PHP) while you're at it).
+
+3.  Make sure to install PHP if not already installed (and the rest of the LAMP stack (Linux Apache MySQL PHP) while you're at it).
 `sudo apt-get install PHP`
--  From here, open your [browser of choice](https://www.mozilla.org/en-US/firefox/new/) and navigate to _index.html_
--  The rest...well the rest is pretty self explanatory huh? Enjoy.
+
+4.  From here, open your [browser of choice](https://www.mozilla.org/en-US/firefox/new/) and navigate to _index.html_
+
+5.  The rest...well the rest is pretty self explanatory huh? Enjoy.
