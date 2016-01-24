@@ -42,10 +42,10 @@
         <h1>Hey, You! Yes, You!</h1>
         <p class="lead">Tired of pixelated pictures in your life? Me to! Go ahead and upload a picture (like a JPG) and I'll work my magic to make it a Scalable Vector Graphic so you don't have to worry about having nasty pixels in your life anymore.</p>
         
-        <form action="./convert/fileUpload.php" method="post" enctype="multipart/form-data">
-          <input type="file" id="fileChoice" />
+        <form method="POST" enctype="multipart/form-data" action="fileUpload.php">
+          <input type="file" name="fileChoice" id="hiddenFileBtn"/>
           <p><a class="btn btn-sm btn-default" id="fileUploadBtn" role="button">Choose Picture</a></p>
-          <input type="submit" id="submitChoice" value="Submit" />
+          <input type="submit" id="hiddenSubmitBtn" value="Submit" />
           <p><a class="btn btn-lg btn-success" id="submitChoiceBtn" role="button">Upload</a></p>
         </form>
 
@@ -53,7 +53,6 @@
   </div>
 
       <footer class="footer">
-        <p>&copy; Company 2014</p>
       </footer>
 
   </div> <!-- /container -->
