@@ -27,7 +27,7 @@ print_r($_FILES);
 echo '</pre>';
  */
 
-$uploaddir	= '/var/www/html/vectorizer/upload/';
+$uploaddir	= '/upload/';
 $uploadfile	= $uploaddir . basename($_FILES['fileChoice']['name']);
 
 //Make sure that the image the user supplies is kosher
